@@ -1,0 +1,35 @@
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  transition: transform 0.4s;
+
+  background-size: contain;
+  background-position: center;
+
+  @include hover(transform, scale(1.2));
+
+  @include on-tablet {
+    height: 32px;
+    width: 32px;
+  }
+
+  &--phone {
+    background-image: url(../icons/icon-Phone-call.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--menu {
+    background-image: url(../icons/icon-Burger-menu.svg);
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url(/src/icons/icon-Burger-menu-hover.svg);
+    }
+  }
+
+  &--close {
+    background-image: url(../icons/icon-Close.svg);
+    background-repeat: no-repeat;
+  }
+}
