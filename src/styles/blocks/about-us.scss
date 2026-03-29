@@ -1,9 +1,12 @@
+
+
 .about-us {
   margin-bottom: 104px;
 
   @include on-tablet {
     margin-bottom: 120px;
   }
+
   &__banner {
     display: block;
     width: 100vw;
