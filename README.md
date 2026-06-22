@@ -27,7 +27,7 @@ To run this project locally, execute the following commands in your terminal:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/Evgeniy45/landing-page.git](https://github.com/Evgeniy45/landing-page.git)
+git clone https://github.com/Evgeniy45/landing-page.git
 
 # Navigate into the project folder
 cd landing-page
