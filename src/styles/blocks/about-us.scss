@@ -1,9 +1,11 @@
+@use "../utils/mixin";
+
 
 
 .about-us {
   margin-bottom: 104px;
 
-  @include on-tablet {
+  @include mixin.on-tablet {
     margin-bottom: 120px;
   }
 
@@ -15,11 +17,11 @@
 
     object-fit: cover;
 
-    @include on-tablet {
+    @include mixin.on-tablet {
       height: 400px;
     }
 
-    @include on-desktop {
+    @include mixin.on-desktop {
       height: 460px;
     }
   }
@@ -30,12 +32,12 @@
     row-gap: 24px;
     margin-top: 48px;
 
-    @include on-tablet {
+    @include mixin.on-tablet {
       grid-template-columns: repeat(2, 2fr);
       gap: 0 48px;
     }
 
-    @include on-desktop {
+    @include mixin.on-desktop {
       column-gap: 110px;
     }
   }
@@ -43,17 +45,17 @@
   &__title {
     margin-bottom: 24px;
 
-    @include on-tablet {
+    @include mixin.on-tablet {
       margin-bottom: 0;
     }
   }
 
   &__text-container {
-    @include on-tablet {
+    @include mixin.on-tablet {
       max-width: 350px;
     }
 
-    @include on-desktop {
+    @include mixin.on-desktop {
       max-width: 500px;
     }
   }

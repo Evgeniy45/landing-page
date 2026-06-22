@@ -1,3 +1,5 @@
+@use "../utils/variablees";
+
 .info-contacts {
   font-style: normal;
   &__list {
@@ -15,7 +17,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: $default-grey-color;
+    color: variablees.$default-grey-color;
   }
 
   &__link {
@@ -26,7 +28,7 @@
     font-size: 16px;
     line-height: 140%;
 
-    color: $secondary-text-color;
+    color: variablees.$secondary-text-color;
 
     transform-origin: left center;
     transition: transform 0.3s ease;
@@ -38,7 +40,7 @@
       bottom: -2px;
       width: 0;
       height: 1px;
-      background-color: $main-text-color;
+      background-color: variablees.$main-text-color;
       transition: width 0.3s ease;
     }
 

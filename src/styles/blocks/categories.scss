@@ -1,10 +1,13 @@
+@use "../utils/mixin";
+@use "../utils/variablees";
+
 .categories {
   margin-bottom: 96px;
 
   &__title {
     max-width: 490px;
 
-    @include on-desktop {
+    @include mixin.on-desktop {
       max-width: 590px;
     }
   }
@@ -17,7 +20,7 @@
     list-style: none;
     width: 100%;
 
-    @include on-tablet {
+    @include mixin.on-tablet {
       row-gap: 56px;
       margin: 0 0 56px;
     }
@@ -26,7 +29,7 @@
   &__link {
     display: block;
     text-decoration: none;
-    color: $main-text-color;
+    color: variablees.$main-text-color;
   }
 
   &__images {
@@ -37,13 +40,13 @@
   }
 
   &__item:nth-child(odd) &__images {
-    @include on-tablet {
+    @include mixin.on-tablet {
       grid-template-columns: 2fr 1fr;
     }
   }
 
   &__item:nth-child(even) &__images {
-    @include on-tablet {
+    @include mixin.on-tablet {
       grid-template-columns: 1fr 2fr;
     }
   }
@@ -65,13 +68,13 @@
   }
 
   &__item:nth-child(odd) &__product-photo:first-child {
-    @include on-tablet {
+    @include mixin.on-tablet {
       aspect-ratio: auto;
     }
   }
 
   &__item:nth-child(even) &__product-photo:last-child {
-    @include on-tablet {
+    @include mixin.on-tablet {
       aspect-ratio: auto;
     }
   }
@@ -82,7 +85,7 @@
     font-size: 18px;
     line-height: 140%;
 
-    @include on-tablet {
+    @include mixin.on-tablet {
       font-size: 24px;
     }
   }

@@ -1,3 +1,5 @@
+@use "../utils/mixin";
+
 .top-bar {
   padding-block: 24px;
 
@@ -5,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @include on-tablet {
+  @include mixin.on-tablet {
     padding: 32px 0;
   }
 
@@ -22,9 +24,9 @@
   &__logo {
     height: 16px;
 
-    @include hover(transform, scale(1.2));
+    @include mixin.hover(transform, scale(1.2));
 
-    @include on-tablet {
+    @include mixin.on-tablet {
       height: 24px;
     }
   }

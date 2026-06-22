@@ -1,11 +1,13 @@
+@use "variablees";
+
 @mixin on-tablet() {
-  @media (min-width: $tablet-min-width) {
+  @media (min-width: variablees.$tablet-min-width) {
     @content;
   }
 }
 
 @mixin on-desktop() {
-  @media (min-width: $desktop-min-width) {
+  @media (min-width: variablees.$desktop-min-width) {
     @content;
   }
 }

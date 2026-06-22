@@ -1,9 +1,11 @@
+@use "../utils/mixin";
+
 .main {
   padding-block: 64px;
 
-  @include content-padding-inline;
+  @include mixin.content-padding-inline;
 
-  @include on-tablet {
+  @include mixin.on-tablet {
     padding-block: 120px;
   }
 }

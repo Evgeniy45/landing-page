@@ -1,3 +1,6 @@
+@use "../utils/mixin";
+@use "../utils/variablees";
+
 .icon {
   display: block;
   height: 24px;
@@ -7,9 +10,9 @@
   background-size: contain;
   background-position: center;
 
-  @include hover(transform, scale(1.2));
+  @include mixin.hover(transform, scale(1.2));
 
-  @include on-tablet {
+  @include mixin.on-tablet {
     height: 32px;
     width: 32px;
   }
@@ -28,7 +31,7 @@
       font-size: 14px;
       line-height: 16px;
       text-transform: uppercase;
-      color: $main-text-color;
+      color: variablees.$main-text-color;
 
       transition: all 0.3s ease;
       pointer-events: none;
@@ -40,7 +43,7 @@
     background-repeat: no-repeat;
 
     &:hover ~ .icon--phone-number {
-      @include on-desktop{
+      @include mixin.on-desktop{
         opacity: 1;
         visibility: visible;
         transform: translateY(-50%) translateX(0);

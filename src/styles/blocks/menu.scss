@@ -1,3 +1,6 @@
+@use "../utils/mixin";
+@use "../utils/variablees";
+
 .menu {
   box-sizing: border-box;
 
@@ -8,7 +11,7 @@
   &__top {
     margin-bottom: 32px;
 
-    @include on-tablet {
+    @include mixin.on-tablet {
       margin-bottom: 60px;
     }
   }
@@ -18,7 +21,7 @@
   }
 
   &__content {
-    @include content-padding-inline;
+    @include mixin.content-padding-inline;
   }
 
   &__phonr-number {
@@ -35,7 +38,7 @@
     display: block;
     width: fit-content;
     padding-bottom: 7px;
-    border-bottom: 1px solid $main-text-color;
+    border-bottom: 1px solid variablees.$main-text-color;
     color: inherit;
     text-decoration: none;
     font-size: 16px;

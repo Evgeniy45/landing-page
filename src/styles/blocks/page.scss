@@ -1,6 +1,8 @@
+@use "../utils/variablees";
+
 .page {
   font-family: 'Space Grotesk', sans-serif;
-  color: $main-text-color;
+  color: variablees.$main-text-color;
   line-height: 140%;
 
   scroll-behavior: smooth;

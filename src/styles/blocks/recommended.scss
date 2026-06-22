@@ -1,8 +1,10 @@
+@use "../utils/mixin";
+
 .recommended {
   margin-bottom: 96px;
 
   &__products {
-    @include page-grid;
+    @include mixin.page-grid;
 
     row-gap: 40px;
   }
@@ -10,11 +12,11 @@
   &__product {
     grid-column: 1 / -1;
 
-    @include on-tablet {
+    @include mixin.on-tablet {
       grid-column: 2 / -2;
     }
 
-    @include on-desktop {
+    @include mixin.on-desktop {
       grid-column: span 4;
     }
   }
